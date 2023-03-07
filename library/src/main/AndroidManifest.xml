@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangzhen.servicemanager">
+
+    <application>
+        <provider
+            android:name=".ServiceProvider"
+            android:authorities="${applicationId}.svcmgr"
+            android:exported="false" />
+    </application>
+</manifest>
