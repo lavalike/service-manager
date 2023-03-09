@@ -35,24 +35,23 @@ public class BundleCompat {
 
     public static void putObject(Bundle bundle, String key, Object value) {
         if (Build.VERSION.SDK_INT < 19) {
-            ReflectUtil.invokeMethod(bundle, Bundle.class, "unparcel", (Class[]) null, (Object[]) null);
+            ReflectUtil.invokeMethod(bundle, Bundle.class, "unparcel", (Class<?>[]) null, (Object[]) null);
             Map<String, Object> map = (Map<String, Object>) ReflectUtil.getFieldObject(bundle, Bundle.class, "map");
             if (map != null) {
                 map.put(key, value);
             }
-        } else if (Build.VERSION.SDK_INT == 19) {
-            ReflectUtil.invokeMethod(bundle, Bundle.class, "unparcel", (Class[]) null, (Object[]) null);
+        } else if (Build.VERSION.SDK_INT < 21) {
+            ReflectUtil.invokeMethod(bundle, Bundle.class, "unparcel", (Class<?>[]) null, (Object[]) null);
             ArrayMap<String, Object> map = (ArrayMap<String, Object>) ReflectUtil.getFieldObject(bundle, Bundle.class, "mMap");
             if (map != null) {
                 map.put(key, value);
             }
-        } else if (Build.VERSION.SDK_INT > 19) {
-            ReflectUtil.invokeMethod(bundle, android.os.BaseBundle.class, "unparcel", (Class[]) null, (Object[]) null);
+        } else {
+            ReflectUtil.invokeMethod(bundle, android.os.BaseBundle.class, "unparcel", (Class<?>[]) null, (Object[]) null);
             ArrayMap<String, Object> map = (ArrayMap<String, Object>) ReflectUtil.getFieldObject(bundle, android.os.BaseBundle.class, "mMap");
             if (map != null) {
                 map.put(key, value);
             }
         }
     }
-
 }
