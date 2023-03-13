@@ -12,8 +12,8 @@ import android.os.RemoteException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.wangzhen.servicemanager.local.ServicePool;
 import com.wangzhen.servicemanager.compat.BundleCompat;
+import com.wangzhen.servicemanager.local.ServicePool;
 
 import java.lang.reflect.Proxy;
 import java.util.Iterator;
@@ -23,9 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Using Content Provider to Realize Synchronous Cross-process Call, If the process of content provider exits,
  * Binder and service information registered by other service processes will be lost
- *
- * @author: zhen51.wang
- * @date: 2023/3/2/002
+ * Created by wangzhen on 2023/3/2/002
  */
 public class ServiceProvider extends ContentProvider {
     public static final String REPORT_BINDER = "report_binder";

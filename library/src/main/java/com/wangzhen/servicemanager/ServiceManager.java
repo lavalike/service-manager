@@ -8,15 +8,13 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Process;
 
-import com.wangzhen.servicemanager.local.ServicePool;
 import com.wangzhen.servicemanager.compat.BundleCompat;
 import com.wangzhen.servicemanager.compat.ContentProviderCompat;
+import com.wangzhen.servicemanager.local.ServicePool;
 
 /**
  * ServiceManager
- *
- * @author: zhen51.wang
- * @date: 2023/3/2/002
+ * Created by wangzhen on 2023/3/2/002
  */
 public class ServiceManager {
 

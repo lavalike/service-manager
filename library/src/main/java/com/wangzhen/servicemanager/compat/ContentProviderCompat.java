@@ -11,9 +11,7 @@ import com.wangzhen.servicemanager.util.ReflectUtil;
 
 /**
  * ContentProviderCompat
- *
- * @author: zhen51.wang
- * @date: 2023/3/7/007
+ * Created by wangzhen on 2023/3/7/007
  */
 public class ContentProviderCompat {
 

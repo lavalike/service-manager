@@ -6,9 +6,7 @@ import java.lang.reflect.Method;
 
 /**
  * ReflectUtil
- *
- * @author: zhen51.wang
- * @date: 2023/3/7/007
+ * Created by wangzhen on 2023/3/7/007
  */
 public class ReflectUtil {
 
@@ -19,7 +17,8 @@ public class ReflectUtil {
                 method.setAccessible(true);
             }
             return method.invoke(target, paramValues);
-        } catch (SecurityException | IllegalArgumentException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+        } catch (SecurityException | IllegalArgumentException | IllegalAccessException |
+                 NoSuchMethodException | InvocationTargetException e) {
             e.printStackTrace();
         }
         return null;
@@ -32,7 +31,8 @@ public class ReflectUtil {
                 field.setAccessible(true);
             }
             return field.get(target);
-        } catch (SecurityException | NoSuchFieldException | IllegalArgumentException | IllegalAccessException e) {
+        } catch (SecurityException | NoSuchFieldException | IllegalArgumentException |
+                 IllegalAccessException e) {
             e.printStackTrace();
         }
         return null;

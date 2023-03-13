@@ -2,9 +2,7 @@ package com.wangzhen.servicemanager.local;
 
 /**
  * ServiceFetcher
- *
- * @author: zhen51.wang
- * @date: 2023/3/7/007
+ * Created by wangzhen on 2023/3/7/007
  */
 public abstract class ServiceFetcher {
     int mServiceId;
