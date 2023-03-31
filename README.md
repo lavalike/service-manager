@@ -2,6 +2,8 @@
 
 轻量级多进程框架
 
+[![Android CI](https://github.com/lavalike/service-manager/actions/workflows/build.yml/badge.svg)](https://github.com/lavalike/service-manager/actions/workflows/build.yml)
+
 ### 添加仓库
 
 ``` groovy
