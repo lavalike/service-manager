@@ -1,10 +1,11 @@
-package com.wangzhen.servicemanager
+package com.wangzhen.servicemanager.samples
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.wangzhen.servicemanager.databinding.ActivitySecondBinding
-import com.wangzhen.servicemanager.service.Api
+import androidx.appcompat.app.AppCompatActivity
+import com.wangzhen.servicemanager.ServiceManager
+import com.wangzhen.servicemanager.samples.databinding.ActivitySecondBinding
+import com.wangzhen.servicemanager.samples.service.Api
 
 /**
  * SecondActivity

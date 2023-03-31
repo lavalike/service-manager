@@ -1,4 +1,4 @@
-package com.wangzhen.servicemanager.service
+package com.wangzhen.servicemanager.samples.service
 
 /**
  * ApiImpl

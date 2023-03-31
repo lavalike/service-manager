@@ -1,6 +1,7 @@
-package com.wangzhen.servicemanager
+package com.wangzhen.servicemanager.samples
 
 import android.app.Application
+import com.wangzhen.servicemanager.ServiceManager
 
 /**
  * MainApplication

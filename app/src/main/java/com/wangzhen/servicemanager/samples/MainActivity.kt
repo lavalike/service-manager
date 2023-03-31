@@ -1,12 +1,13 @@
-package com.wangzhen.servicemanager
+package com.wangzhen.servicemanager.samples
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.wangzhen.servicemanager.databinding.ActivityMainBinding
-import com.wangzhen.servicemanager.service.Api
-import com.wangzhen.servicemanager.service.ApiImpl
+import com.wangzhen.servicemanager.ServiceManager
+import com.wangzhen.servicemanager.samples.databinding.ActivityMainBinding
+import com.wangzhen.servicemanager.samples.service.Api
+import com.wangzhen.servicemanager.samples.service.ApiImpl
 
 /**
  * MainActivity
