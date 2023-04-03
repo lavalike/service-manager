@@ -2,7 +2,9 @@
 
 轻量级多进程框架
 
-[![Android CI](https://github.com/lavalike/service-manager/actions/workflows/build.yml/badge.svg)](https://github.com/lavalike/service-manager/actions/workflows/build.yml)
+[![Android CI](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/efb0c478ae8445e3a8cc0f48cf8646a0~tplv-k3u1fbpfcp-zoom-1.image)](https://github.com/lavalike/service-manager/actions/workflows/build.yml)
+
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8920b069e33c4cb489d6a61eb5d650fd~tplv-k3u1fbpfcp-zoom-1.image)
 
 ### 添加仓库
 
@@ -63,5 +65,3 @@ ServiceManager.getService(SERVICE_NAME)?.let {
     Toast.makeText(this, (it as Api).call(), Toast.LENGTH_SHORT).show()
 }
 ```
-
-
